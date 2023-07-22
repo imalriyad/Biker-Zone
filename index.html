@@ -19,7 +19,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'btn-max': '#E76F51'
+                'btn-max': '#E76F51',
+                'header-bg': 'rgba(231, 111, 81, 0.10)',
+                'p-text': 'rgba(0, 0, 0, 0.80)'
               }
             }
           }
@@ -36,7 +38,8 @@
 </head>
 
 <body>
-    <header>
+    <header class="md:container md:mx-auto">
+    <nav>
         <div class="navbar bg-base-100 md:container md:mx-auto">
             <div class="navbar">
               <div class="dropdown">
@@ -57,7 +60,7 @@
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
                 <li><a>About</a></li>
-                <li><a>Contact</a></li> 
+                <li><a>Contact</a></li>  
               </ul>
             </div>
             <div class="navbar-center">
@@ -65,9 +68,65 @@
             </div>
           </div>
         </nav>
+<!-- Slider  -->
+
+        <div class="carousel lg:w-max lg:h-[550px] md:container md:mx-auto bg-header-bg lg:mt-10" >
+            <div id="slide1" class="carousel-item relative w-full ">
+          <div class="flex flex-col p-8 items-center lg:flex-row justify-around gap-4 flex-1">
+            <div class="space-y-6 ">
+              <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-base p-text ">Amet minim mollit non deserunt ullamco <br>
+                est sit aliqua dolor do amet sint. Velit officia<br> consequat duis enim velit mollit.</p>
+              <button class="btn bg-btn-max btn-error text-white">Purchase</button>
+              </div>
+            <img class="lg:h-[406px] h-[340px] " src="./images/slider/bike1.png" class="w-full" />
+          </div>
+
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle mt-14 text-base">❮</a> 
+                <a href="#slide2" class="btn btn-circle mt-14 text-base">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="flex flex-col p-8 items-center lg:flex-row md:flex-row justify-around gap-4 flex-1">
+                <div class="space-y-6 ">
+                  <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                  <p class="text-base p-text ">Amet minim mollit non deserunt ullamco <br>
+                    est sit aliqua dolor do amet sint. Velit officia<br> consequat duis enim velit mollit.</p>
+                  <button class="btn bg-btn-max btn-error text-white">Purchase</button>
+                  </div>
+                <img class="lg:h-[406px] h-[340px] " src="./images/slider/bike2.png" class="w-full" />
+              </div>
+    
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle mt-14 text-base">❮</a> 
+                    <a href="#slide3" class="btn btn-circle mt-14 text-base">❯</a>
+                  </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="flex flex-col p-8 items-center lg:flex-row justify-around gap-4 flex-1">
+                <div class="space-y-6 ">
+                  <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                  <p class="text-base p-text ">Amet minim mollit non deserunt ullamco <br>
+                    est sit aliqua dolor do amet sint. Velit officia<br> consequat duis enim velit mollit.</p>
+                  <button class="btn bg-btn-max btn-error text-white">Purchase</button>
+                  </div>
+                <img class="lg:h-[406px] h-[340px] " src="./images/slider/bike3.png" class="w-full" />
+              </div>
+    
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle mt-14 text-base">❮</a> 
+                    <a href="#slide1" class="btn btn-circle mt-14 text-base">❯</a>
+                  </div>
+            </div> 
+          </div>
+
     </header>
     <main>
+        
+     <section>
 
+     </section>
     </main>
     <footer>
 
