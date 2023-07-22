@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker Zone - choose your dream bike today!</title>
     <link rel="shortcut icon" href="./images/others/feature-bike.png" type="image/x-icon">
+    <!-- Google Fonts// Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Tailwind and Daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-<body>
+    <!-- custom-tailwind-styles  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-max': '#E76F51'
+              }
+            }
+          }
+        }
+      </script>
 
+    <!-- custom-css  -->
+   <style>
+    body{
+        font-family: poppins;
+    }
+   </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 md:container md:mx-auto">
+            <div class="navbar">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Contact</a></li>   
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-3xl">Biker Zone</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <ul class="menu menu-horizontal mr-3 text-base">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li> 
+              </ul>
+            </div>
+            <div class="navbar-center">
+              <a class="btn btn-error bg-btn-max text-white px-6">Login</a>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
